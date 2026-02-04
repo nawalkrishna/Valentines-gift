@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import EvadingButton from "./EvadingButton";
+import EvadingButton from "@/components/EvadingButton";
 
 interface ValentineCardProps {
     onYes: () => void;
@@ -29,7 +29,7 @@ export default function ValentineCard({ onYes }: ValentineCardProps) {
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="hidden sm:block absolute -bottom-8 -left-8 text-5xl filter drop-shadow-lg"
             >
-                �
+                🎀
             </motion.div>
             <motion.div
                 animate={{ scale: [1, 1.2, 1], opacity: [0.7, 1, 0.7] }}
@@ -111,7 +111,7 @@ export default function ValentineCard({ onYes }: ValentineCardProps) {
                 transition={{ delay: 0.4 }}
                 className="text-gray-500 font-semibold mb-6 sm:mb-10 text-sm sm:text-lg italic"
             >
-                Choose wisely... my heart is in your hands! 🥺�
+                Choose wisely... my heart is in your hands! 🥺💕
             </motion.p>
 
             {/* Buttons */}
